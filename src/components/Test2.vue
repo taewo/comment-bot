@@ -1,12 +1,17 @@
 <template>
-  <div style="border:2px solid blue">
-    <!-- <input :value="value123" @input="$emit('update:value123', $event.target.value)" type="text"> -->
-    {{ value123}}
+  <div>
+    <h1>
+      Test2
+    </h1>
+    <slot name="header">111</slot>
+    <slot name="body">222</slot>
+    <slot name="footer">333</slot>
   </div>
+
 </template>
 <script>
 export default {
-  props: ['value123']
+
 }
 </script>
 <style lang=''>
